@@ -1,0 +1,30 @@
+# Laravel
+#/bootstrap/compiled.php
+
+.env
+
+# Composer
+/vendor
+composer.phar
+
+# Node
+/node_modules
+
+# OS
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
+.idea/
+vagrant
+.vagrant
+
+#Misc ?
+*~
+_*
+/.vscode
+package-lock.json
+/public/css
+/public/js
+package-lock.json
+/public/mix-manifest.json
