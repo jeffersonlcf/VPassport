@@ -10636,8 +10636,8 @@ a.text-dark:focus {
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url(/fonts/vendor/font-awesome/fontawesome-webfont.eot?674f50d287a8c48dc19ba404d20fe713);
-  src: url(/fonts/vendor/font-awesome/fontawesome-webfont.eot?674f50d287a8c48dc19ba404d20fe713) format("embedded-opentype"), url(/fonts/vendor/font-awesome/fontawesome-webfont.woff2?af7ae505a9eed503f8b8e6982036873e) format("woff2"), url(/fonts/vendor/font-awesome/fontawesome-webfont.woff?fee66e712a8a08eef5805a46892932ad) format("woff"), url(/fonts/vendor/font-awesome/fontawesome-webfont.ttf?b06871f281fee6b241d60582ae9369b9) format("truetype"), url(/fonts/vendor/font-awesome/fontawesome-webfont.svg?912ec66d7572ff821749319396470bde) format("svg");
+  src: url("/fonts/vendor/font-awesome/fontawesome-webfont.eot?v=4.7.0");
+  src: url("/fonts/vendor/font-awesome/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("/fonts/vendor/font-awesome/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("/fonts/vendor/font-awesome/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("/fonts/vendor/font-awesome/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("/fonts/vendor/font-awesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16113,7 +16113,7 @@ div[data-toggle="buttons"] label.active {
   content: "";
   width: 3px;
   height: 100%;
-  background: #ee4d4d;
+  background: #007bff;
   left: 50%;
   top: 0;
   position: absolute;
@@ -16132,7 +16132,7 @@ div[data-toggle="buttons"] label.active {
 }
 
 #timeline .timeline-item .timeline-icon {
-  background: #ee4d4d;
+  background: #007bff;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -16147,6 +16147,13 @@ div[data-toggle="buttons"] label.active {
   position: relative;
   top: 14px;
   left: 14px;
+}
+
+#timeline .timeline-item .timeline-icon i {
+  position: relative;
+  top: 13px;
+  left: 11px;
+  color: #ffffff;
 }
 
 #timeline .timeline-item .timeline-content {
@@ -16164,7 +16171,7 @@ div[data-toggle="buttons"] label.active {
 
 #timeline .timeline-item .timeline-content h2 {
   padding: 15px;
-  background: #ee4d4d;
+  background: #007bff;
   color: #fff;
   margin: -20px -20px 0 -20px;
   font-weight: 300;
@@ -16180,7 +16187,7 @@ div[data-toggle="buttons"] label.active {
   height: 0;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-left: 7px solid #ee4d4d;
+  border-left: 7px solid #007bff;
 }
 
 #timeline .timeline-item .timeline-content.right {
@@ -16192,7 +16199,7 @@ div[data-toggle="buttons"] label.active {
   right: 45%;
   left: inherit;
   border-left: 0;
-  border-right: 7px solid #ee4d4d;
+  border-right: 7px solid #007bff;
 }
 
 #myFooter {
@@ -16276,5 +16283,92 @@ div[data-toggle="buttons"] label.active {
   #myFooter {
     text-align: center;
   }
+}
+
+/* USER PROFILE PAGE */
+
+.card {
+  margin-top: 20px;
+  padding: 30px;
+  background-color: rgba(214, 224, 226, 0.2);
+  -moz-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.card.hovercard {
+  position: relative;
+  padding-top: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  background-color: white;
+}
+
+.card.hovercard .card-background {
+  height: 130px;
+}
+
+.card-background img {
+  -webkit-filter: blur(25px);
+  -moz-filter: blur(25px);
+  -o-filter: blur(25px);
+  -ms-filter: blur(25px);
+  filter: blur(25px);
+  margin-left: -100px;
+  margin-top: -200px;
+  min-width: 130%;
+}
+
+.card.hovercard .useravatar {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+}
+
+.card.hovercard .useravatar img {
+  width: 100px;
+  height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.card.hovercard .card-info {
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  right: 0;
+}
+
+.card.hovercard .card-info .card-title {
+  padding: 0 5px;
+  font-size: 20px;
+  line-height: 1;
+  color: #262626;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.card.hovercard .card-info {
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 20px;
+  color: #737373;
+  text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+  padding: 0 20px;
+  margin-bottom: 17px;
+}
+
+.btn-pref .btn {
+  -webkit-border-radius: 0 !important;
 }
 
