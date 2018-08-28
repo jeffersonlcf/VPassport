@@ -2,8 +2,8 @@
 
 return [
 
-    'app'               => 'Laravel',
-    'app2'              => 'Auth :version',
+    'app'               => 'Volunteer Passport',
+    'app2'              => 'sbt',
     'home'              => 'Home',
     'login'             => 'Login',
     'logout'            => 'Logout',

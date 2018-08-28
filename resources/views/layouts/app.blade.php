@@ -72,6 +72,10 @@
 
             </main>
 
+            
+            @include('partials.footer')
+            
+
         </div>
 
         {{-- Scripts --}}
