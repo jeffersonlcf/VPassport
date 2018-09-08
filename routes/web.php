@@ -126,4 +126,11 @@ Route::group(['middleware' => ['auth', 'activated', 'role:admin', 'activity', 't
     Route::get('active-users', 'AdminDetailsController@activeUsers');
 });
 
+// VPassport admin routes
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'activated', 'role:admin', 'activity', 'twostep']], function () {
+    Route::get('/', 'Admin\AdminController@controlPanel');
+    Route::get('/orgtypes', 'Admin\AdminController@orgTypes');
+    Route::get('/orgtypes/data', 'Admin\AdminController@orgTypesData');
+});
+
 Route::redirect('/php', '/phpinfo', 301);
