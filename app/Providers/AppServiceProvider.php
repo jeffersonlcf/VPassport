@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Database\Eloquent\Relations\Relation;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -15,6 +16,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Relation::morphMap([
+            'profiles' => 'App\Models\Pofile',
+        ]);
+
         //Paginator::useBootstrapThree();
         Schema::defaultStringLength(191);
     }

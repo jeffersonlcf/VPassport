@@ -112,4 +112,12 @@ class User extends Authenticatable
     {
         return $this->profiles()->detach($profile);
     }
+
+    public function interests() {
+        return $this->belongsToMany('App\Interest', 'user_interest');
+    }
+
+    public function positions() {
+        return $this->hasMany('App\Position');
+    }
 }

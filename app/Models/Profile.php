@@ -61,4 +61,9 @@ class Profile extends Model
     {
         return $this->hasOne('App\Models\Theme');
     }
+
+    public function social_link()
+    {
+        return $this->morphOne('App\SocialLink', 'sociable');
+    }
 }

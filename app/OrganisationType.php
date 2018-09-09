@@ -19,4 +19,8 @@ class OrganisationType extends Model
     public static function get_top() {
         return self::whereNull('parent_id')->get();
     }
+
+    public function organisation() {
+        return $this->hasMany('App\Organisation');
+    }
 }
